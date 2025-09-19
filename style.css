@@ -101,6 +101,25 @@ section h2 {
   text-align: center;
 }
 
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  /* Background image */
+  background-image: url('praj.jpg'); /* <-- relative path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+
 #hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -727,3 +746,4 @@ section {
 #experience h2 {
   margin-bottom: 15px;
 }
+
