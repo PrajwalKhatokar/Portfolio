@@ -109,15 +109,38 @@ section h2 {
   align-items: center;
   text-align: center;
   color: white;
-
-  /* Background image */
-  background-image: url('praj.jpg'); /* <-- relative path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background: #0077cc; /* fallback color */
   position: relative;
 }
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid white;
+
+  /* Add small background behind image */
+  background-image: url('./images/your-logo.png'); /* your logo */
+  background-size: 50px 50px; /* size of logo */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-name {
+  color: #004aad; /* blue name */
+  position: relative;
+  z-index: 2;
+  
+  /* optional small logo behind name */
+  background-image: url('./images/your-logo.png');
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: center top;
+  padding-top: 70px; /* space for logo */
+}
+
 
 
 #hero h1 {
@@ -746,4 +769,5 @@ section {
 #experience h2 {
   margin-bottom: 15px;
 }
+
 
